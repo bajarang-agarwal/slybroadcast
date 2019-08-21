@@ -180,6 +180,8 @@ class Slybroadcast
         $arr = [];
         if(!empty($this->responseData))
         {
+            \Log::info('Vocemail Response received from slybroadcast');
+            \Log::info($this->responseData);
             foreach ($this->responseData as $key => $value)
             {
 
